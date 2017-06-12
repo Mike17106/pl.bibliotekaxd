@@ -1,0 +1,14 @@
+<div ng-show="authenticated">
+	<h1>Dodaj ksiązke:</h1>
+	<form>
+		<input type = "text" placeholder="Tytuł" ng-model="newCtrl.book.title"><br />
+		<input type = "text" placeholder="Autor" ng-model="newCtrl.book.author"><br />
+		<input type = "text" placeholder="ISBN" ng-model="newCtrl.book.isbn"><br />
+		<input type = "text" placeholder="Liczba sztuk" ng-model="newCtrl.book.available"><br/>
+		<button ng-click="newCtrl.saveBook()">Dodaj ksiazke</button>
+	</form>
+</div>
+<div ng-show="!authenticated"> 
+	<h2>Zaloguj się jako admin</h2>
+	<a href="#!login">Login</a>
+</div>

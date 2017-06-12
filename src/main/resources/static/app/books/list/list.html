@@ -1,0 +1,6 @@
+<h1>Lista Książek</h1>
+<ul>
+	<li ng-repeat="b in listCtrl.books">
+		<a ng-href="#!details/{{b.id}}">{{b.title}} - {{b.author}} ({{b.isbn}}) ({{b.available}})</a>
+	</li>
+</ul>
